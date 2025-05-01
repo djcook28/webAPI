@@ -10,8 +10,7 @@ def send_email(message, subject):
     password = os.getenv('pythonGmailPass')
     context = ssl.create_default_context()
 
-    message = f"""
-    Subject: New {subject} e-mail
+    message = f"""Subject: New {subject} e-mail
 
     {message}
     """
